@@ -43,11 +43,13 @@ const Api = () => {
     <div>
       <div className="mt-5 mx-5  flex justify-center  ">
         <div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/2/22/Dragon_Ball_Super.png"
-            alt=""
-            width="300px"
-          />
+          <div className="container">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/2/22/Dragon_Ball_Super.png"
+              alt=""
+              width="300px"
+            />
+          </div>
           <div className="input-group relative flex items-stretch w-full mb-2 mt-5 mx-1 rounded">
             <input
               value={search}
@@ -82,7 +84,7 @@ const Api = () => {
               {item.name}
             </h5>
 
-            <h5 className="mb-1 text-xl text-center font-serif text-yellow-100 dark:text-white">
+            <h5 className="mb-1 text-xl text-center font-serif text-yellow-100 dark:text-black">
               Universo {item.universe}
             </h5>
           </div>
